@@ -315,6 +315,17 @@ caption {
   text-align: left;
 }
 
+.noPadding
+{
+width:400px;
+height:400px;
+border: 5px solid brown;
+}
+.padding
+{
+padding: 10px 20px 10px 10px;
+}
+
 th {
   text-align: inherit;
   text-align: -webkit-match-parent;
@@ -11353,7 +11364,7 @@ p.lead {
     left: 0;
     display: flex;
     flex-direction: column;
-    width: 17rem;
+    width: 13rem;
     height: 100vh;
   }
   #sideNav .navbar-brand {
@@ -11362,8 +11373,8 @@ p.lead {
     padding: 0.5rem;
   }
   #sideNav .navbar-brand .img-profile {
-    max-width: 10rem;
-    max-height: 10rem;
+    max-width: 12rem;
+    max-height: 12rem;
     border: 0.5rem solid rgba(255, 255, 255, 0.2);
   }
   #sideNav .navbar-collapse {
