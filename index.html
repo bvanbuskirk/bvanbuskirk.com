@@ -64,13 +64,28 @@
                             <h3 class="mb-0">Undergraduate Student Instructor</h3>
                             <div class="subheading mb-0">
                                 <a href="https://cs61c.org/sp22/">Machine Structures</a>, UC Berkeley</div>
-                            <p>Instructing, tutoring and guiding about 450 students through Machine Structures, CS61C, covering: 
-                                Operating Systems, Parallel Computing, C and Assembly Programming, CPU Data Path design and more.
-                                Students have four main projects: 
-                                <ul><li>Advanced C programming project(varies by term)</li>
-                                    <li>ML classifier built primarily in RISC-V Assembly code</li>
-                                    <li>CPU data path digital design using only logic gates</li>
-                                    <li>Parallel computing matrix operations in C programming</li>
+                            <p>Instructing, tutoring and guiding about 800 students through Machine Structures, CS61C, covering: 
+                                Operating Systems, Parallel Computing, C and Assembly Programming, CPU Data Path design, 
+                                error-correcting codes and much more.
+                            </p>
+                            <p>Students have four main projects: 
+                                <ul>
+                                    <li><b>Advanced C programming project(varies by term)</b>: 
+                                        deals with memory allocation techniques, pointer manipulation, and gdb debugging.
+                                    </li>
+                                    <li><b>ML classifier built in RISC-V assembly</b>: 
+                                        implementing matrix operations like matrix multiplication, exponentiation, etc. in the 
+                                        RISC-V assembly language.
+                                    </li>
+                                    <li><b>CPU data path digital design</b>:
+                                        designing a single-cycle and pipelined processor using only basic logic gates, flip flops,
+                                        and multiplexers(DMEM is abstracted away), and then testing it by running custom RISC-V 
+                                        files.
+                                    </li>
+                                    <li><b>Parallel computing matrix operations in C programming</b>:
+                                        using thread-level and data-level parallelism, as well as cache-blocking to implement highly
+                                        optimized matrix operations in C.
+                                    </li>
                                 </ul>
                             </p>
                         </div>
@@ -83,11 +98,15 @@
                                 <a href="http://people.eecs.berkeley.edu/~ronf/Biomimetics.html">Biomimetic Milisystems Lab</a>, UC Berkeley</div>
                             <p>Directly advised by Professor Ronald Fearing, I am leading a team of undergraduates
                                 to develop a network of underactuated, intelligent robots that cooperate 
-                                to overcome tasks otherwise unattainable by a singular, well-equipped 
-                                robot. This research will show that swarm robotics can be a more effective solution 
-                                to one of the most difficult problems in robotics, while maintaining an affordable
-                                design solution for a broader audience. Details on this are featured 
-                                in the "Projects" section.</p>
+                                to overcome tasks otherwise unattainable by a singular, well-equipped robot. 
+                                This research is working to show that sample efficient reinforcement learning policies,
+                                like online Model Predictive Control, provide the ability for a single model to not only
+                                generalize across inconsistencies between robots, but also allow for the robot to adapt 
+                                to the environment and achieve tasks without need of system identification. This study 
+                                is currently underway and pushing to produce a research paper for the 2023 IEEE International 
+                                Conference on Robotics and Automation (ICRA). Details on this are featured in the "Projects" 
+                                section.
+                            </p>
                         </div>
                         <div class="flex-shrink-0"><span class="text-primary">January 2022 - Present</span></div>
                     </div>
@@ -109,7 +128,7 @@
                                 have the opportunity to travel as a result of it. Out of love for the music, we found a way to 
                                 grow as an artist in a financially broken music scene, and pave our own path, eventually
                                 leading to US and international tours. This experience taught me a lot about the DIY mindset
-                                and is still a fundamental aspect of my identity to date. 
+                                and is still a fundamental aspect of my identity today. 
                             </p>
                         </div>
                         <div class="flex-shrink-0"><span class="text-primary">November 2016 - March 2020</span></div>
@@ -139,7 +158,7 @@
                             </div>
                             <div>
                                 <b>Occupations: </b>Undergraduate Student Instructor for 
-                                <a href="https://cs61c.org/sp22/">Machine Structures</a>
+                                <a href="https://cs61c.org/sp22/">CS61C - Machine Structures</a>
                             </div>
                             
                         </div>
@@ -173,7 +192,7 @@
                     <ul class="fa-ul mb-0">
                         <li>
                             <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Signal Processing
+                            Signal Processing, Spectrum Analysis
                         </li>
                         <li>
                             <span class="fa-li"><i class="fas fa-check"></i></span>
@@ -185,7 +204,11 @@
                         </li>
                         <li>
                             <span class="fa-li"><i class="fas fa-check"></i></span>
-                            MOSFET Amplifier and Circuit Design
+                            MOSFET Amplifier and Circuit Design - SPICE
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            PCB Design - KiCAD
                         </li>
                     </ul>
                     <div class="subheading mb-0">Programming Languages</div>
@@ -228,11 +251,15 @@
                         </li>
                         <li>
                             <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Precision soldering
+                            Soldering
                         </li>
                         <li>
                             <span class="fa-li"><i class="fas fa-check"></i></span>
                             3D Printing
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            TIG welding
                         </li>
                     </ul>
                 </div>
@@ -265,27 +292,31 @@
                             <h3 class="mb-0">Kamigami Swarm Robots</h3>
                             <div class="subheading mb-0">Biomimetic Milisystems Lab, Professor Ronald Fearing</div>
                             <div class="subheading mb-0">Project Still in Development</div>
-                            <img src="assets/img/kamigami.jpg" class="padding" alt="Kamigami" width="300" height="400" style="float:right">
+                            <img src="assets/img/kamigami.jpg" class="padding" alt="Kamigami" width="400" height="350" style="float:right">
                             <ul>
-                                <li><b>What: </b>Lightweight underactuated swarm robots built on Kamigami chases, 
-                                    that communicate with each other on a ROS network to accomplish tasks in combined force. 
-                                    A magnetic tether is utilized to add an extra degree of freedom and enhance 
-                                    cooperative manueverability.
+                                <li><b>What: </b>Lightweight underactuated swarm robots built on Kamigami chases and designed using
+                                    end-to-end Reinforcement Learning, communicate on a ROS network to push or pull objects in their 
+                                    environment that would otherwise be impossible for a single robot to achieve.
                                 </li>
-                                <li><b>Why: </b>Most robots run into touble while traversing natural terrain, 
-                                    climbing on top of obstacles, as well as safely getting down from elevated 
-                                    surfaces. However with assistance, these tasks are much more attainable and 
-                                    sometimes even more effective. 
+                                <li><b>Why: </b> Using end-to-end Reinforcement
+                                    Learning methods like Model Predictive Control, these robots can move an object to a target
+                                    location or through a desired trajectory by implicitly learning their own dynamics and the
+                                    characteristics of their environment. This drastically cuts down on the efforts of programming
+                                    classical feedback controls and system identification and allows allows for the system to adapt 
+                                    to changes in the environment and dynamics of the robot itself. In addition, once two or three
+                                    agents have been trained in an environment, then an arbitrary number of similar robots can be 
+                                    deployed with no training required.
                                 </li>
                                 <li><b>How: </b>Each robot is equipped with:
                                     <ol>
                                         <li>RaspberryPi Zero - fast computation and network capabilities at a low mass </li>
                                         <li>Inertial Mass Unit - measurements of orientation and movement</li>
-                                        <li>Magnetic Tether - allows robots to drag or lower other robots off of elevated surfaces</li>
+                                        <li>ADC - processing battery voltage and RPM data</li>
                                     </ol> 
                                     A peripheral camera also tracks the location of the robots and updates destinations
-                                    per unit. Also, each robot learns its own dynamics using reinforcement learning so that all
-                                    hardware imperfections are accounted for.
+                                    per unit. Additionally, a PCB was designed to embed all breakout boards and integrate connections, 
+                                    as well as a 3D printed electronics housing to abstract away the electronics on board(photos of 
+                                    these will be updated once the design meets all expectations).
                                 </li>
                               </ul>
                         </div>
@@ -324,7 +355,7 @@
                                             detect the data stream and invert all encoding. 
                                         </li>
                                     </ul>
-                                    <p><b>Compression: </b>2.4MB to 10kB</p>
+                                    <p><b>Compression: </b>240:1 (2.4MB to 10kB)</p>
                                     <p> <b>Takeaway: </b>The goal of this wasn't to perfectly recreate the original video, but to find the limits of compression in which
                                         the recovered video is fairly close to the orginal but much much more efficient to transmit. This project taught 
                                         me alot about communications and signal processing design. I had to learn many experimental video encoding 
