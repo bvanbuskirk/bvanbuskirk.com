@@ -100,11 +100,9 @@
                                 to develop a network of underactuated, intelligent robots that cooperate 
                                 to overcome tasks otherwise unattainable by a singular, well-equipped robot. 
                                 This research is working to show that sample efficient reinforcement learning policies,
-                                like online Model Predictive Control, provide the ability for a single model to not only
+                                like online Model Predictive Control and Model-Based Meta RL, provide the ability for a single model to not only
                                 generalize across inconsistencies between robots, but also allow for the robot to adapt 
-                                to the environment and achieve tasks without need of system identification. This study 
-                                is currently underway and pushing to produce a research paper for the 2023 IEEE International 
-                                Conference on Robotics and Automation (ICRA). Details on this are featured in the "Projects" 
+                                to the environment and achieve tasks without need of system identification. Details on this are featured in the "Projects" 
                                 section.
                             </p>
                         </div>
@@ -200,15 +198,11 @@
                         </li>
                         <li>
                             <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Machine Learning and Optimization Algorithms
+                            Machine Learning, Reinforcement Learning and Optimization Algorithms
                         </li>
                         <li>
                             <span class="fa-li"><i class="fas fa-check"></i></span>
                             MOSFET Amplifier and Circuit Design - SPICE
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            FPGA Digital Integrated Circuit Design
                         </li>
                         <li>
                             <span class="fa-li"><i class="fas fa-check"></i></span>
@@ -244,10 +238,6 @@
                         <li>
                             <span class="fa-li"><i class="fas fa-check"></i></span>
                             Lingua Franca
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Verilog
                         </li>
                     </ul>
                 </div>
@@ -303,7 +293,7 @@
                         <div class="flex-grow-1">
                             <h3 class="mb-0">Kamigami Swarm Robots</h3>
                             <div class="subheading mb-0">Biomimetic Milisystems Lab, Professor Ronald Fearing</div>
-                            <div class="subheading mb-0">Project Still in Development</div>
+                            <div class="subheading mb-0">Project Still in Development - More Details Soon</div>
                             <img src="assets/img/kamigami.jpg" class="padding" alt="Kamigami" width="400" height="350" style="float:right">
                             <ul>
                                 <li><b>What: </b>Lightweight underactuated swarm robots built on Kamigami chases and designed using
@@ -311,24 +301,21 @@
                                     environment that would otherwise be impossible for a single robot to achieve.
                                 </li>
                                 <li><b>Why: </b> Using end-to-end Reinforcement
-                                    Learning methods like Model Predictive Control, these robots can move an object to a target
-                                    location or through a desired trajectory by implicitly learning their own dynamics and the
-                                    characteristics of their environment. This drastically cuts down on the efforts of programming
-                                    classical feedback controls and system identification and allows allows for the system to adapt 
-                                    to changes in the environment and dynamics of the robot itself. In addition, once two or three
-                                    agents have been trained in an environment, then an arbitrary number of similar robots can be 
-                                    deployed with no training required.
+                                    Learning methods like Model Predictive Control and Model-Based Meta-RL, these robots can move
+                                    an object to a target location or through a desired trajectory by implicitly learning their own 
+                                    dynamics and the characteristics of their environment. In addition to this impressive performance,
+                                    our sample efficient policy drastically cuts down on the training data required for a dynamics model
+                                    of this type. The most comparable literature to our work, by <a href="https://arxiv.org/pdf/1711.05253.pdf">A. Nagabandi et al</a>,
+                                    uses a dataset on the order of 10 thousand samples whereas we are able to achieve exceptional performance with
+                                    as little as 10 samples
                                 </li>
                                 <li><b>How: </b>Each robot is equipped with:
                                     <ol>
                                         <li>RaspberryPi Zero - fast computation and network capabilities at a low mass </li>
-                                        <li>Inertial Mass Unit - measurements of orientation and movement</li>
-                                        <li>ADC - processing battery voltage and RPM data</li>
+                                        <li>Custom PCB - containing IMU and ADC for sensory input(currently not used, nor necessary)</li>
                                     </ol> 
-                                    A peripheral camera also tracks the location of the robots and updates destinations
-                                    per unit. Additionally, a PCB was designed to embed all breakout boards and integrate connections, 
-                                    as well as a 3D printed electronics housing to abstract away the electronics on board(photos of 
-                                    these will be updated once the design meets all expectations).
+                                    A peripheral camera aids the RL algorithm by tracking the location of the robots and updating destinations
+                                    per unit via the ROS application, RVIZ.
                                 </li>
                               </ul>
                         </div>
